@@ -9,7 +9,7 @@ public interface UserService {
     public User findById(Integer id);
 
     public List<User> findAll() ;
-    void update( User updatedUser);
+    void update( int id, User updatedUser);
 
     void delete(int id);
 }
