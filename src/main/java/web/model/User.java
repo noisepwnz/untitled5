@@ -3,11 +3,11 @@ package web.model;
 import javax.persistence.*;
 
 @Entity
-@Table (name = "Users")
+@Table(name = "Users")
 public class User {
     @Column
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column
@@ -22,7 +22,7 @@ public class User {
         this.surname = surname;
     }
 
-    public  User () {
+    public User() {
 
     }
 
