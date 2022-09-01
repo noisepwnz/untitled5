@@ -25,14 +25,14 @@ public class UserServiceImpl implements UserService {
 
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     @Override
     public User findById(Integer id) {
         return userDao.findById(id);
 
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     @Override
     public List<User> findAll() {
         return userDao.findAll();
